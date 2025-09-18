@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VLSI, FPGA & Robotics Training</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0f1c;
+      color: #eee;
+    }
+    header {
+      background: linear-gradient(135deg, #005bea, #00c6fb);
+      color: white;
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    header .cta {
+      margin-top: 20px;
+      padding: 12px 28px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #005bea;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    header .cta:hover {
+      transform: scale(1.05);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #eee;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c6fb;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #00c6fb;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #1c2333;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 10px;
+      color: #00c6fb;
+    }
+    .card ul {
+      padding-left: 18px;
+      text-align: left;
+    }
+    .contact {
+      background: linear-gradient(135deg, #005bea, #00c6fb);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 15px;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0a0f1c;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VLSI, FPGA & Robotics Training</h1>
+    <p>Master RTL Design, Embedded Systems, and Robotics with hands-on learning</p>
+    <button class="cta">Register Now</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vlsi">VLSI</a>
+    <a href="#fpga">FPGA</a>
+    <a href="#embedded">Embedded</a>
+    <a href="#robotics">Robotics</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      We offer industry-focused training in <b>VLSI Front-End (RTL), FPGA Development, Embedded Systems, and Robotics</b>.
+      Our mission is to prepare students and professionals with the right mix of theory, hands-on practice, and projects 
+      that match industry expectations in semiconductors, embedded design, and automation.
+    </p>
+  </section>
+
+  <section id="vlsi">
+    <h2>VLSI Front-End (RTL) Design</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Core Topics</h3>
+        <ul>
+          <li>Verilog, SystemVerilog, VHDL</li>
+          <li>RTL Design & Coding Practices</li>
+          <li>FSMs, Pipelining, CDC, Linting</li>
+          <li>ASIC vs FPGA Flows</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Protocols</h3>
+        <ul>
+          <li>AXI, AHB, APB</li>
+          <li>PCIe, USB, MIPI</li>
+          <li>I2C, SPI, UART, CAN</li>
+          <li>DDR, Ethernet</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Verification</h3>
+        <ul>
+          <li>SystemVerilog Assertions</li>
+          <li>UVM Testbenches</li>
+          <li>Functional Coverage</li>
+          <li>Static Timing Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="fpga">
+    <h2>FPGA Development</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>FPGA Basics</h3>
+        <ul>
+          <li>FPGA Architecture</li>
+          <li>Vivado & Quartus Tools</li>
+          <li>IP Integration</li>
+          <li>Timing Closure</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Advanced FPGA</h3>
+        <ul>
+          <li>AXI Interconnect</li>
+          <li>DSP Blocks</li>
+          <li>Partial Reconfiguration</li>
+          <li>Debugging (ILA, Chipscope)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Applications</h3>
+        <ul>
+          <li>IoT Acceleration</li>
+          <li>AI on FPGA</li>
+          <li>Signal Processing</li>
+          <li>Prototyping ASICs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="embedded">
+    <h2>Embedded Systems</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Microcontrollers</h3>
+        <ul>
+          <li>8051, ARM Cortex-M</li>
+          <li>GPIO, ADC/DAC</li>
+          <li>Interrupts & Timers</li>
+          <li>Low Power Systems</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Embedded OS</h3>
+        <ul>
+          <li>RTOS (FreeRTOS, Zephyr)</li>
+          <li>Linux Device Drivers</li>
+          <li>Kernel Modules</li>
+          <li>Yocto Linux</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Protocols</h3>
+        <ul>
+          <li>I2C, SPI, UART, CAN</li>
+          <li>Ethernet, USB</li>
+          <li>BLE, Wi-Fi, ZigBee</li>
+          <li>MQTT, CoAP (IoT)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="robotics">
+    <h2>Robotics</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Core</h3>
+        <ul>
+          <li>Sensors & Actuators</li>
+          <li>Kinematics & Dynamics</li>
+          <li>PID Control</li>
+          <li>Microcontrollers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Autonomous Systems</h3>
+        <ul>
+          <li>SLAM</li>
+          <li>ROS</li>
+          <li>Computer Vision</li>
+          <li>Path Planning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Advanced Robotics</h3>
+        <ul>
+          <li>AI & Machine Learning</li>
+          <li>Drone Navigation</li>
+          <li>Robotic Arms</li>
+          <li>Human-Robot Interaction</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@vlsi-training.com">info@vlsi-training.com</a></p>
+    <p>Phone: +91-98765-43210</p>
+    <p>Location: Kochi, Kerala, India</p>
+  </section>
+
+  <footer>
+    <p>© 2025 VLSI & Embedded Training. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
